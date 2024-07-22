@@ -52,7 +52,7 @@ function openSearch() {
     searchContainer.innerHTML =`
     <div class="row py-4 ">
         <div class="col-md-6 ">
-            <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+            <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white mb-3" type="text" placeholder="Search By Name">
         </div>
         <div class="col-md-6">
             <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
@@ -90,8 +90,8 @@ function displayMeals(ml) {
         <div class="col-md-3">
                 <div onclick="getMealDetails('${ml[i].idMeal}')" class="meal position-relative overflow-hidden cursor-pointer rounded-2">
                     <img class="w-100" src="${ml[i].strMealThumb}" alt="">
-                    <div class="meal-layer position-absolute d-flex align-items-center p-2 text-black">
-                        <h3>${ml[i].strMeal}</h3>
+                    <div class="meal-layer position-absolute d-flex align-items-center justify-content-center p-2 text-black">
+                        <h3 class="">${ml[i].strMeal}</h3>
                     </div>
                 </div>
         </div>
